@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {width: 120px; margin: auto; display: flex; justify-content: space-between;}
+
+      button {
+        padding: 5px 7px;
+      }
+    </style>
+    <title>Just For You &#129505</title>
+  </head>
+  <body style="text-align: center">
+    <img src="https://nadyacntk.github.io/jawabygy/Foto.gif" alt="nadya" style="height: 280px" />
+    <h1>Hai Ganteng</h1>
+    <h2>Jadiin aku pacar kamu dong</h2>
+    <div>
+      <button onclick="mau()">OKE</button>
+      <button onmouseover="gak(this)">GAK</button>
+    </div>
+    <script>
+      function mau() {
+        alert("Makasih ya udah jadiin aku pacar kamu :)");
+        alert("I Love You");
+        alert("Kasih tau ke WA aku ya");
+
+        location.assign("https://wa.me/+6285714233455?text=Mulai%20hari%20ini%20kita%20jadian%20ya%20cantik%20:v");
+      }
+      function gak(ini) {
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+      }
+    </script>
+  </body>
+</html>
